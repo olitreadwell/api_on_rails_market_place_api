@@ -23,6 +23,7 @@ gem 'active_model_serializers'
 
 group :development do
   gem 'sqlite3'
+end
 
 end
 
