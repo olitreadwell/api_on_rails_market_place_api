@@ -21,6 +21,11 @@ gem 'jquery-rails'
 # API gems
 gem 'active_model_serializers'
 
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
+end
+
 group :development do
   gem 'sqlite3'
 end
@@ -31,10 +36,7 @@ group :test do
   gem "ffaker"
 end
 
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
-end
+gem "devise"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
