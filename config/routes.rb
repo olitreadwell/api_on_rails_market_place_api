@@ -1,3 +1,5 @@
+require 'api_constraints'
+
 MarketPlaceApi::Application.routes.draw do
   devise_for :users
   #API definition
@@ -6,6 +8,7 @@ MarketPlaceApi::Application.routes.draw do
     scope module: :v1,
       constraints: ApiConstraints.new(version: 1, default: true) do
     #Where we are going to list our resources
+      resources :users, :only => [:show]
     end
   end
 end
