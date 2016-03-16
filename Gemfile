@@ -18,6 +18,10 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+
+#DotEnv
+gem 'dotenv-rails', :groups => [:development, :test]
+
 # API gems
 gem 'active_model_serializers'
 
