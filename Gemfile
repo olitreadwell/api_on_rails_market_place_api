@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', '4.0.6'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -26,6 +26,8 @@ group :development do
 end
 
 group :test do
+  gem 'test-unit'
+  gem 'minitest'
   gem "rspec-rails", "~> 2.14"
   gem "factory_girl_rails"
   gem "ffaker"
