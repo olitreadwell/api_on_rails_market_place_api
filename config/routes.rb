@@ -11,6 +11,7 @@ MarketPlaceApi::Application.routes.draw do
       constraints: ApiConstraints.new(version: 1, default: true) do
       #Where we are going to list our resources
 
+      resources :users, :only => [:show]
 
     end
   end
