@@ -17,4 +17,10 @@ describe Api::V1::UsersController do
 
     it { should respond_with 200 }
   end
+
+
+  describe "POST #create" do
+
+
+  end
 end
